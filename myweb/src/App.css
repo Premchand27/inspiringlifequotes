@@ -1,0 +1,86 @@
+@import url(https://fonts.googleapis.com/css?family=Orelega+One);
+
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+}
+
+body:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(circle at 0% 0%, rgba(55, 222, 222, .8), rgba(55, 220, 222, 0) 80%), radial-gradient(circle at 100% 0%, rgba(255, 20, 50, .8), rgba(255, 20, 222, 0) 50%), radial-gradient(circle at 100% 100%, rgba(20, 25, 250, .7), rgba(255, 0, 0, 0) 80%), radial-gradient(circle at 50% 50%, rgba(255, 235, 22, .7), rgba(255, 0, 0, .0) 80%), radial-gradient(circle at 0% 100%, rgba(231, 20, 255, .95), rgba(200, 222, 255, 0) 90%);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.container {
+  min-height: 60vh; /* Adjusted for responsiveness */
+  width: 60%; /* Adjusted for responsiveness */
+  max-width: 600px; /* Maximum width */
+  margin: 0 auto; /* Center the container */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+  padding: 3em;
+  border-radius: 1em;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  backdrop-filter: blur(10px); /* Blur the background */
+  margin-top:2em;
+}
+
+.grad {
+  font-family: 'Orelega One';
+  font-size: 3em; /* Adjusted for responsiveness */
+  color: black;
+  text-align: center;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .grad {
+    font-size: 6vw; /* Adjusted font size for smaller screens */
+  }
+}
+
+.quote{
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+
+  padding: 0 auto;
+  
+}
+
+.quote p{
+  font-size: 1.3em;
+}
+
+@media screen and (max-width:576px) {
+  .container{
+    margin-top:6em;
+
+  }
+  .grad {
+    font-family: 'Orelega One';
+    font-size: 2.5em; /* Adjusted for responsiveness */
+    color: black;
+    text-align: center;
+  }
+  .quote p{
+    font-size: 1.2em;
+    margin: 1em;
+  }
+}
